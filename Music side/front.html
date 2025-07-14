@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FML</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg-[#212121] text-white arial">
+
+    <!--- Write a JavaScript program to create a dropdown menu that shows and hides its options when clicked. -->
+
+    <nav class="flex bg-[#121212] text-white p-[0rem] justify-between items-center h-[5rem]" id="nav">
+        <div class="w-[5rem] bg-gradient-to-tr from-blue-300 to-gray-800">
+            <img src="Musikk app logo/ .jpg" alt="" class=" object-cover  mix-blend-overlay">
+        </div>
+        <div>
+            <h1 class="text-[20px] ">
+                Free Music Listner 
+            </h1>
+        </div>
+        <div class="relative inline-block text-left mr-[1rem]">
+            <button id="dropdownButton" class="inline-flex justify-center w-full rounded-md border border-gray-700 shadow-sm px-4 py-2 bg-[#121212] text-sm font-medium text-white hover:bg-gray-700">
+                Meny
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        
+            <ul id="dropdownMenu" class="hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none text-black">
+                <li>
+                  <a href="front.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Hjem</a>
+                </li>
+                <li>
+                  <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Spilleliste</a>
+                </li>
+                <li>
+                  <a href="minSide.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Min bruker</a>
+                </li>
+                <li>
+                  <a href="/abonnement" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Abonnement</a>
+                </li>
+              </ul>
+        </div>
+
+    </nav>
+
+    <!-- Write a JavaScript program to create a slideshow that changes the displayed image when a next or previous button is clicked. Add an animation to the sliding for extra credit! -->
+
+    <div class="relative w-[500px] h-[500px] mx-auto mt-10 overflow-hidden" id="slideshow-container">
+        <div id="slides" class="flex w-[500px] h-[500px] transition-transform duration-700 ease-in-out">
+          <img src="https://i.pinimg.com/736x/14/9f/23/149f235609779b4d73641adc30a01d24.jpg" class="w-[500px] h-[500px] object-cover flex-shrink-0" />
+          <img src="https://i.ebayimg.com/images/g/vjkAAOSwGhFmO3sj/s-l1200.jpg" class="w-[500px] h-[500px] object-cover flex-shrink-0" />
+          <img src="https://m.media-amazon.com/images/I/61nnn-GnW9L._AC_UF1000,1000_QL80_.jpg" class="w-[500px] h-[500px] object-cover flex-shrink-0" />
+        </div>
+        <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 px-4 py-2 text-white">‹</button>
+        <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 px-4 py-2 text-white">›</button>
+      </div>
+
+      <div class="flex justify-center mt-5">
+        <button onclick="window.location.href='index.html'" class="bg-gradient-to-r from-blue-700 to-pink-400 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transition duration-300">
+          ▶ Play
+        </button>
+      </div>
+
+
+<script src="js/front.js"></script>
+</body>

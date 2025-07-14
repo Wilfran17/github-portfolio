@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FML</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#212121] text-white md:m-0  arial">
+ <div class="md:ml-[15rem] md:mr-[15rem]"> 
+    <header class=" relative flex h-[15rem] md:h-[25rem] items-end bg-gradient-to-tr from-gray-800 to-blue-200 ">
+        
+        <img src="danny-howe-bn-D2bCvpik-unsplash.jpg" alt="" class="h-[15rem] md:h-[25rem] w-[100%] object-cover absolute mix-blend-overlay ">
+       <div id="banner-content">
+        <h1 class="text-[35px] md:text-[5rem]  ml-[2.5rem]  md:mb-[0px]">
+            Playlist
+        </h1>
+        <p class="mb-[2.5rem] ml-[2.5rem] text-[15px] mr-[2.5rem]">
+            Browse our library of songs and play them directly in the app
+        </p>
+        </div>
+   </header>
+   <main>
+  
+    <div class="mb-[1rem]">
+        <input class="bg-[#121212] w-[100%] border-none" type="text" id="search-input" placeholder="Search a song ...">
+    </div>
+
+       
+        <div class="flex grid gap-1 mt-[0rem] mb-[10rem]" id="playlist">
+           <!--- <p class="pt-[20px] pb-[20px]">
+              top 5
+            </p> -->
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-1" id="song" >
+                <p class="text-[18px]  ml-[5px]">
+                    1
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                    Love Through Her <span class="text-[#999] text-[15px] ml-[0.5rem]">The weeknd </span>
+                </p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-2" id="song" >
+                <p class="text-[18px]  ml-[5px]">
+                    2
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                    Im Good <span class="text-[#999] text-[15px] ml-[0.5rem]">The weeknd </span>
+                </p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-3 " id="song" >
+                <p class="text-[18px]  ml-[5px]">
+                    3
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                    I Wanna Feel You <span class="text-[#999] text-[15px] ml-[0.5rem]">The weeknd </span>
+                </p>
+            </div>
+
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-4" id="song" >
+                <p class="text-[18px]  ml-[5px]">
+                    4
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                   Trust Issues  <span class="text-[#999] text-[15px] ml-[0.5rem]">The weeknd </span>
+                </p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-5" id="song">
+                <p class="text-[18px]  ml-[5px]">
+                    5
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                    Twenty Eight <span class="text-[#999] text-[15px] ml-[0.5rem]">The weeknd </span>
+                </p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#333] p-[7px] hover:bg-[#444] song-6 " id="song" >
+                <p class="text-[18px]  ml-[5px]">
+                    6
+                </p>
+               <img src="ic_play_circle_filled_white_48px-512.webp" alt="" class="h-[30px]">
+          
+                <p class="text-[16px]">
+                    Wish You Well <span class="text-[#999] text-[15px] ml-[0.5rem]">Brent Faiyaz </span>
+                </p>
+            </div>
+
+
+        </div>
+   </main>
+ </div>   
+
+ 
+ <footer class="w-full bottom-0 fixed p-4 bg-[#111]">
+    <div class="flex items-center justify-between w-full mt-2 md:mt-0 md:flex-row flex-col gap-4">
+        <!-- Song Info -->
+        <div class="w-full flex flex-col md:flex-row justify-between items-center gap-4">
+        
+            <!-- Song Info -->
+            <div class="text-sm md:text-base text-center md:text-left" id="now-playing-info">
+                <span id="now-playing-title" class="font-semibold">Title</span> - 
+                <span id="now-playing-artist" class="text-gray-400">Artist</span>
+            </div>
+        
+            <!-- Player Buttons -->
+            <div class="md:absolute md:left-1/2 md:top-1/3 md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex items-center gap-4 justify-center md:mr-[10rem]">
+                <button id="prev-btn" class="hover:scale-110 transition">
+                    <i class="fas fa-step-backward"></i> <!-- Previous song icon -->
+                </button>
+                <button id="shuffle-btn" class="hover:text-[#0300C6]">
+                    <i class="fas fa-random"></i> <!-- Shuffle icon -->
+                </button>
+        
+            
+                <button id="player-play-btn" data-playing="false" class="flex items-center justify-center">
+                    <div id="player-icon-play">
+                        <img src="ic_play_circle_filled_white_48px-512.webp" alt="Play" class="h-[30px]">
+                    </div>
+                    <div class="hidden" id="player-icon-pause">
+                        <img src="bullet-with-number-11-png.webp" alt="Pause" class="h-[30px]">
+                    </div>
+                </button>
+        
+                <button id="repeat-btn" class="hover:text-[#0300C6]">
+                    <i class="fas fa-redo"></i> <!-- Repeat icon -->
+                </button>
+                <button id="next-btn" class="hover:scale-110 transition">
+                    <i class="fas fa-step-forward"></i> <!-- Next song icon -->
+                </button>
+            </div>
+        
+            <!-- Volume Control -->
+             <!-- Volume Control with Font Awesome -->
+             <div class="flex items-center gap-2 justify-center">
+                <i class="fas fa-volume-up text-white text-xl"></i> <!-- Volume Up icon from Font Awesome -->
+                <input type="range" min="0" max="1" step="0.01" value="1" id="volume-slider" class="w-[100px] cursor-pointer accent-blue-500">
+            </div>
+        </div>
+    </div>
+
+    <!-- Timebar Section: Positioned below the player controls -->
+    <div class="mt-4 w-full flex items-center justify-center" id="player-controls">
+        <div class="flex basis-[81%] justify-between items-center gap-4" id="player-timeline">
+            <div>
+                <span class="player-time" id="player-time-current">0:0</span>
+            </div> 
+            <div class="flex relative h-[6px] bg-[#999] rounded-[25px] m-[0 5px] basis-[81%] overflow-hidden" id="player-progress">
+                <div class="h-[6px] rounded-[25px] flex-0 basis-0 bg-[#0300C6]" id="player-progress-filled"></div>
+            </div>
+            <div>
+                <span class="player-time" id="player-time-duration">0:0</span>
+            </div>
+        </div>
+    </div>
+
+    <audio src="Documents/projectss/project 10 musikk app/appSongs/Im Good- The Weeknd.mp3">
+        Your browser doesn't support the audio element.
+    </audio>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

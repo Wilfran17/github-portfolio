@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FML</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#121212] text-white arial">
+    
+    <nav class="flex fixed top-0 w-full bg-[#121212] text-white p-[0rem] justify-between items-center h-[5rem] relative z-50" id="nav">
+        <div class="w-[5rem] bg-gradient-to-tr from-blue-300 to-gray-800">
+            <img src="Musikk app logo/ .jpg" alt="" class=" object-cover  mix-blend-overlay">
+        </div>
+        <div>
+            <h1 class="text-[20px] ">
+                Free Music Listner 
+            </h1>
+        </div>
+        <div class="relative inline-block text-left mr-[1rem]">
+            <button id="dropdownButton" class="inline-flex  w-full rounded-md border border-gray-700 shadow-sm px-4 py-2 bg-[#121212] text-sm font-medium text-white hover:bg-gray-700 ">
+                Meny
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        
+            <ul id="dropdownMenu" class="hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none text-black">
+                <li>
+                  <a href="front.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Hjem</a>
+                </li>
+                <li>
+                  <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Spilleliste</a>
+                </li>
+                <li>
+                  <a href="minSide.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Min bruker</a>
+                </li>
+                <li>
+                  <a href="/abonnement" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Abonnement</a>
+                </li>
+              </ul>
+        </div>
+
+    </nav>
+    <!-- Innholdsrader -->
+    <div class="flex flex-row h-[41rem] w-full gap-2 p-2">
+    
+        <!-- Venstre: Artist info -->
+        <div class="flex-1 bg-[#212121] p-4 rounded-lg overflow-auto">
+            <h2 class="text-xl font-bold mb-2">Top Artister</h2>
+            <div id="top-artists" class="space-y-4"></div>
+            
+            <ul class="space-y-3">
+                <h1>Mest spilte artister i Norge</h1>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/reputation-1555521759.jpg" alt="Taylor Swift" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Taylor Swift</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxmIqFETmj7KcYGoFGdu7TtpnxQ9VnzNpFQ&s" alt="The Weeknd" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">The Weeknd</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://kommunikasjon.ntb.no/data/images/00329/749c0cd6-93a5-4475-9cde-5bdbab05e3e2.jpg" alt="Emma Steinbakken" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Emma Steinbakken</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://unitedstage.no/uploads/sites/6/2024/08/ug-slottsfjell-av-sara-abraham-scaled.jpeg" alt="UNDERGRUNN" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">UNDERGRUNN</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1rjwpPVmb8_9yj9zt8SlVoDf3342jTaSJQ&s" alt="Karpe" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Karpe</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWvyWgvhxwYD27BLEfFhPuM0FymmQ0yVzi9A&s" alt="Drake" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Drake</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://i1.sndcdn.com/artworks-Ljd8c89tGh77-0-t500x500.jpg" alt="David Guetta" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">David Guetta</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://i1.sndcdn.com/avatars-cmeFsw0N9zCgjvCK-tBfMHQ-t1080x1080.jpg" alt="Ballinciaga" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Ballinciaga</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://static.wikia.nocookie.net/thirty_seconds_to_mars/images/1/1f/Kanye-west-0814-GQ-FEKW07.01.jpg/revision/latest?cb=20200629204103" alt="Kanye West" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Kanye West</span>
+                </li>
+                <li class="flex items-center gap-4 bg-[#1e1e1e] p-3 rounded">
+                  <img src="https://i.scdn.co/image/ab6761610000e5eb0dd6a7e932246e0df643afb9" alt="Roc Boyz" class="w-12 h-12 rounded-full object-cover">
+                  <span class="text-white text-lg">Roc Boyz</span>
+                </li>
+              </ul>
+              
+              
+        </div>
+    
+
+        <!-- Midten: Søkerute (Litt mindre) -->
+        <div class="flex-[1.25] bg-[#212121] p-4 rounded-lg items-end bg-gradient-to-tr from-gray-800 to-blue-800 overflow-auto">
+            
+            <img src="https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/qilewyuhuczkyoobfy6a.jpg" alt="" class="w-full object-cover h-[12rem] rounded-lg mb-4 ">
+
+            <h2 class="text-xl font-bold mb-2">Søk</h2>
+            <input type="text" id="artistInput" placeholder="Skriv inn artistnavn..." class="p-2 rounded text-black w-full mb-2"/>
+            <button onclick="searchArtist()" class=" w-full py-2  bg-gradient-to-r from-blue-700 to-pink-400 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-full shadow-lg transition duration-300">Søk etter artist</button>
+            <div id="artist-stats" class="text-sm"></div>
+            <div id="artist-info" class="space-y-4"></div>
+    
+            <!-- Albums -->
+            <div id="albums-info" class="mt-4">
+                <h3 class="text-lg font-semibold">Album</h3>
+                <div id="albums" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+            </div>
+    
+            <!-- Songs -->
+            <div id="songs-info" class="mt-4">
+                <h3 class="text-lg font-semibold">Sanger</h3>
+                <div id="songs" class="space-y-2"></div>
+            </div>
+        </div>
+    
+        <!-- Høyre: Stats -->
+        <div class="flex-1 bg-[#212121] p-4 rounded-lg overflow-hidden relative flex bg-gradient-to-tr from-gray-800 to-blue-300">
+            <img 
+                src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-weeknd-asdar-agatha.jpg" 
+                alt="" 
+                class="absolute inset-0 w-full h-full object-cover rounded-lg mix-blend-overlay z-0 " 
+            />
+            <h2 class="text-xl font-bold mb-2 relative z-10 text-white">Likte</h2>
+            
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-weeknd-asdar-agatha.jpg" alt="" class="w-full object-cover h-[16rem] rounded-lg relative z-10 mt-[22rem] absolute">
+        </div>
+    </div>
+
+    <footer class="w-full bottom-0 fixed p-4 bg-[#111] z-50">
+        <div class="flex items-center justify-between w-full mt-2 md:mt-0 md:flex-row flex-col gap-4">
+            <!-- Song Info -->
+            <div class="w-full flex flex-col md:flex-row justify-between items-center gap-4">
+            
+                <!-- Song Info -->
+                <div class="text-sm md:text-base text-center md:text-left" id="now-playing-info">
+                    <span id="now-playing-title" class="font-semibold">Title</span> - 
+                    <span id="now-playing-artist" class="text-gray-400">Artist</span>
+                </div>
+            
+                <!-- Player Buttons -->
+                <div class="md:absolute md:left-1/2 md:top-1/3 md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex items-center gap-4 justify-center md:mr-[10rem]">
+                    <button id="prev-btn" class="hover:scale-110 transition">
+                        <i class="fas fa-step-backward"></i> <!-- Previous song icon -->
+                    </button>
+                    <button id="shuffle-btn" class="hover:text-[#0300C6]">
+                        <i class="fas fa-random"></i> <!-- Shuffle icon -->
+                    </button>
+            
+                
+                    <button id="player-play-btn" data-playing="false" class="flex items-center justify-center">
+                        <div id="player-icon-play">
+                            <img src="ic_play_circle_filled_white_48px-512.webp" alt="Play" class="h-[30px]">
+                        </div>
+                        <div class="hidden" id="player-icon-pause">
+                            <img src="bullet-with-number-11-png.webp" alt="Pause" class="h-[30px]">
+                        </div>
+                    </button>
+            
+                    <button id="repeat-btn" class="hover:text-[#0300C6]">
+                        <i class="fas fa-redo"></i> <!-- Repeat icon -->
+                    </button>
+                    <button id="next-btn" class="hover:scale-110 transition">
+                        <i class="fas fa-step-forward"></i> <!-- Next song icon -->
+                    </button>
+                </div>
+            
+                <!-- Volume Control -->
+                 <!-- Volume Control with Font Awesome -->
+                 <div class="flex items-center gap-2 justify-center">
+                    <i class="fas fa-volume-up text-white text-xl"></i> <!-- Volume Up icon from Font Awesome -->
+                    <input type="range" min="0" max="1" step="0.01" value="1" id="volume-slider" class="w-[100px] cursor-pointer accent-blue-500">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Timebar Section: Positioned below the player controls -->
+        <div class="mt-4 w-full flex items-center justify-center" id="player-controls">
+            <div class="flex basis-[81%] justify-between items-center gap-4" id="player-timeline">
+                <div>
+                    <span class="player-time" id="player-time-current">0:0</span>
+                </div> 
+                <div class="flex relative h-[6px] bg-[#999] rounded-[25px] m-[0 5px] basis-[81%] overflow-hidden" id="player-progress">
+                    <div class="h-[6px] rounded-[25px] flex-0 basis-0 bg-[#0300C6]" id="player-progress-filled"></div>
+                </div>
+                <div>
+                    <span class="player-time" id="player-time-duration">0:0</span>
+                </div>
+            </div>
+        </div>
+    
+        <audio src="Documents/projectss/project 10 musikk app/appSongs/Im Good- The Weeknd.mp3">
+            Your browser doesn't support the audio element.
+        </audio>
+    </footer>
+
+    <script src="minSide.js"></script>
+</body>
+</html>
